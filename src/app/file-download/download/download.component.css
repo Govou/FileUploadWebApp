@@ -1,0 +1,28 @@
+
+.sc {
+	border: 1px solid #fff;
+	padding: 3px 4px;
+	margin-right: 8px;
+	text-align: center;
+	border-radius: 73%;
+	cursor: pointer;
+}
+
+button {
+	background: #0a6fc2;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+
+
+.btnd{
+    padding: 10px;
+    float: right;
+}
+.btna{
+    padding: 10px;
+}

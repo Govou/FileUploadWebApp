@@ -1,0 +1,52 @@
+<div class="container">
+        <div class="contentWrapper">
+            <h3 class="heading"><span class="st">Test (Simple)</span> <hr class="hrs"></h3>
+             <div class="bordr-ri">
+            <app-download></app-download>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <div class="wrapper">
+               <div class="row">
+                   <div class="col12">
+                       <p class="imputt">Input</p>
+
+                       <form [formGroup]="fileUploadForm" (ngSubmit)="onFormSubmit()">
+                      <div class="flatLeftdiv">
+                        <br>
+                        <div >
+                        <input class="inputbtn" type="file" id="customFile" name="myfile"
+                        (change)="onFileSelect($event)" #UploadFileInput>
+                        <!-- <label for="customFile">{{fileInputLabel || 'Choose File'}}</label> -->
+                        </div>
+                        <br>
+                        <!-- <button id="Request"><span class="sc">&#8594</span> Prowss Request </button> 
+                        <button id="Cancel"><span class="sc">&times</span> Cancel </button>   -->
+                        <button class="button-ctm" id="Request" style="margin-right: 1em;">&nbsp;&nbsp; Process Request </button> 
+                        <button class="button-ctmxx" id="Cancel"> &nbsp;&nbsp;Cancel </button>
+                      </div>
+                    </form>
+                      <div class="flatright">
+                        <h3>Special Output</h3>
+                        <p>No of columns, if you were to arrange number in columns, with a maximum of 3 numbers per column and only numbers divisible by 9 can participate in each column
+                        </p>
+                        <span>{{noOfCol}}</span>
+                      </div>
+                   </div>
+                   <div class="col12">
+                   <p class="imput">Output</p>
+                   <div class="outp"> &#9888; &nbsp; Please note that all outputs are separated by comma if output is more than 1 </div>
+                   <div class="outputleft">
+                   <app-output [item]="outputItem"></app-output>
+               </div>
+            </div>
+        </div>
+     </div>
+</div>
+   
+
+
+   
